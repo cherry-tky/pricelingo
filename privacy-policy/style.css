@@ -28,12 +28,14 @@ header {
 .home-link {
   display: inline-block;
   color: #fff;
-  text-decoration: none;
+  text-decoration: none !important;
   border-radius: 16px;
 }
 
+.home-link:link,
 .home-link:visited {
   color: #fff;
+  text-decoration: none !important;
 }
 
 .home-link .mark {
@@ -52,6 +54,10 @@ header {
   outline-offset: 4px;
 }
 
+.header-copy {
+  transform: translateY(3px);
+}
+
 .mark {
   display: grid;
   place-items: center;
@@ -60,7 +66,16 @@ header {
   border-radius: 16px;
   color: #fff;
   background: #08765a;
-  font-size: 34px;
+}
+
+.mark svg {
+  width: 35px;
+  height: 35px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
 .brand,
