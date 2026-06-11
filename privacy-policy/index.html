@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="PriceLingo privacy policy">
+  <title>PriceLingo Privacy Policy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <header>
+      <div class="mark">⇄</div>
+      <div>
+        <p class="brand">PriceLingo</p>
+        <h1>Privacy Policy</h1>
+      </div>
+    </header>
+    <p class="effective">Effective June 11, 2026</p>
+
+    <p>PriceLingo is a browser extension that converts a price selected by the user into a preferred currency.</p>
+
+    <h2>Data processed locally</h2>
+    <p>Selected text is processed locally in your browser to determine whether it contains a price and currency. PriceLingo does not transmit the complete selected text or webpage URL.</p>
+    <p>Chrome synchronized extension storage saves your preferred target currency, enabled setting, and interpretations for ambiguous currency symbols. These preferences are used only to provide the extension's functionality.</p>
+
+    <h2>Data sent for conversion</h2>
+    <p>When you request a conversion, PriceLingo sends only the source and target three-letter currency codes, such as USD and EUR, to the Frankfurter API at <code>api.frankfurter.dev</code>. The selected amount is multiplied by the returned rate locally.</p>
+    <p>Frankfurter states that its API does not collect personal data. Its public service runs behind Cloudflare, which may receive basic request metadata for service delivery, security, and analytics.</p>
+
+    <h2>Collection and sharing</h2>
+    <ul>
+      <li>No analytics, browsing-history collection, ads, or user accounts</li>
+      <li>No sale of user data</li>
+      <li>No remotely hosted code</li>
+      <li>No sharing except the disclosed currency-pair request</li>
+    </ul>
+
+    <h2>Permissions</h2>
+    <p><code>storage</code> saves preferences. Website access lets PriceLingo recognize user-selected prices and display the conversion button. Access to <code>api.frankfurter.dev</code> obtains exchange rates.</p>
+
+    <h2>Data retention</h2>
+    <p>Preferences remain until changed or the extension is removed. Exchange rates are held temporarily in memory for up to six hours.</p>
+
+    <h2>Contact</h2>
+    <p>For support or privacy questions, visit the <a href="https://github.com/cherry-tky/pricelingo/issues">PriceLingo public support page</a>.</p>
+
+    <footer>PriceLingo · Informational daily reference rates</footer>
+  </main>
+</body>
+</html>
