@@ -3,11 +3,48 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="PriceLingo converts selected prices into your preferred currency while you browse.">
-  <title>PriceLingo — Prices speak your currency</title>
+  <meta name="description" content="PriceLingo is a free Chrome and Edge currency converter extension. Select any price on a webpage and convert it without leaving the page.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="PriceLingo">
+  <meta property="og:title" content="PriceLingo - Currency Converter Extension for Chrome">
+  <meta property="og:description" content="Select any price on a webpage and instantly convert it to your preferred currency.">
+  <meta property="og:url" content="https://pricelingo.com/">
+  <meta property="og:image" content="https://pricelingo.com/favicon.png">
+  <meta name="twitter:card" content="summary">
+  <link rel="canonical" href="https://pricelingo.com/">
+  <title>PriceLingo - Currency Converter Extension for Chrome</title>
   <link rel="icon" type="image/png" sizes="128x128" href="/favicon.png?v=2">
   <link rel="shortcut icon" type="image/png" href="/favicon.png?v=2">
-  <link rel="stylesheet" href="site.css?v=3">
+  <link rel="stylesheet" href="site.css?v=4">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "name": "PriceLingo",
+          "url": "https://pricelingo.com/"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "PriceLingo: Select Currency Converter",
+          "alternateName": "PriceLingo",
+          "url": "https://pricelingo.com/",
+          "installUrl": "https://chromewebstore.google.com/detail/pricelingo-select-currenc/cgjomahblflnhoagknnbhgllkefkieme",
+          "downloadUrl": "https://chromewebstore.google.com/detail/pricelingo-select-currenc/cgjomahblflnhoagknnbhgllkefkieme",
+          "sameAs": "https://chromewebstore.google.com/detail/pricelingo-select-currenc/cgjomahblflnhoagknnbhgllkefkieme",
+          "applicationCategory": "BrowserApplication",
+          "operatingSystem": "Google Chrome, Microsoft Edge",
+          "description": "A browser extension that converts a price selected on a webpage into the user's preferred currency.",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+          }
+        }
+      ]
+    }
+  </script>
 </head>
 <body>
   <header class="nav">
@@ -22,18 +59,19 @@
     <nav>
       <a href="/support/">Support</a>
       <a href="/privacy-policy/">Privacy</a>
+      <a class="nav-download" href="https://chromewebstore.google.com/detail/pricelingo-select-currenc/cgjomahblflnhoagknnbhgllkefkieme">Download</a>
     </nav>
   </header>
 
   <main>
     <section class="hero">
       <div class="hero-copy">
-        <p class="eyebrow">A simpler way to understand prices</p>
-        <h1>Prices speak your currency.</h1>
-        <p class="lead">Select a price on any webpage and get an instant reference conversion without leaving the page.</p>
+        <p class="eyebrow">Free Chrome &amp; Edge extension</p>
+        <h1>The currency converter for prices you select.</h1>
+        <p class="lead">PriceLingo is a browser add-on that converts selected prices into your preferred currency without making you leave the page.</p>
         <div class="actions">
-          <a class="button primary" href="/support/">How it works</a>
-          <a class="button" href="/privacy-policy/">Privacy first</a>
+          <a class="button primary" href="https://chromewebstore.google.com/detail/pricelingo-select-currenc/cgjomahblflnhoagknnbhgllkefkieme">Download from Chrome Web Store</a>
+          <a class="button" href="#how-it-works">How PriceLingo works</a>
         </div>
       </div>
       <div class="conversion-card" aria-label="Example currency conversion">
@@ -50,7 +88,13 @@
       </div>
     </section>
 
-    <section class="features">
+    <section class="intro" aria-labelledby="currency-converter-extension">
+      <p class="eyebrow">Price conversion while browsing</p>
+      <h2 id="currency-converter-extension">A currency converter extension that stays out of your way</h2>
+      <p>Shopping abroad, comparing travel prices, or reading a product page in another currency? PriceLingo recognizes selected prices with common currency symbols and three-letter codes, then shows an informational reference conversion beside the selection.</p>
+    </section>
+
+    <section class="features" id="how-it-works" aria-label="How PriceLingo works">
       <article>
         <h2>Select</h2>
         <p>Highlight a price with a currency symbol or three-letter code.</p>
@@ -65,12 +109,52 @@
       </article>
     </section>
 
+    <section class="use-cases" aria-labelledby="built-for-browsing">
+      <div class="section-heading">
+        <p class="eyebrow">Built for everyday browsing</p>
+        <h2 id="built-for-browsing">Understand foreign prices in three quick steps</h2>
+      </div>
+      <div class="use-case-grid">
+        <article>
+          <h3>Compare online shopping</h3>
+          <p>Convert a product price directly on the store page before deciding whether it is a good deal.</p>
+        </article>
+        <article>
+          <h3>Plan travel spending</h3>
+          <p>Understand hotel, ticket, restaurant, and activity prices while researching a trip.</p>
+        </article>
+        <article>
+          <h3>Recognize local formats</h3>
+          <p>PriceLingo supports common US and European number formats, currency symbols, and codes.</p>
+        </article>
+      </div>
+    </section>
+
     <section class="privacy">
       <div>
         <p class="eyebrow">Built with restraint</p>
         <h2>Your browsing stays yours.</h2>
       </div>
       <p>PriceLingo processes selected prices locally. Only source and target currency codes are sent to the exchange-rate service. No ads, analytics, accounts, or remotely hosted code.</p>
+    </section>
+
+    <section class="faq" aria-labelledby="questions">
+      <div class="section-heading">
+        <p class="eyebrow">Questions</p>
+        <h2 id="questions">About the PriceLingo currency converter add-on</h2>
+      </div>
+      <article>
+        <h3>Which browsers does PriceLingo support?</h3>
+        <p>PriceLingo is a Manifest V3 extension built for Chromium browsers, including Google Chrome and Microsoft Edge.</p>
+      </article>
+      <article>
+        <h3>Are the exchange rates live trading rates?</h3>
+        <p>No. PriceLingo uses informational daily reference rates, so banks and payment services may show different totals.</p>
+      </article>
+      <article>
+        <h3>Does PriceLingo track browsing?</h3>
+        <p>No. PriceLingo has no ads, analytics, or accounts. Read the <a href="/privacy-policy/">privacy policy</a> for full details.</p>
+      </article>
     </section>
   </main>
 
